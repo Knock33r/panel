@@ -1,0 +1,27 @@
+[--rev, 1.20.1, --output-dir, C:\Users\cocop\Desktop\test1\., --compile, spigot]
+Loading BuildTools version: git-BuildTools-a50d932-181 (#181)
+Java Version: Java 8
+Current Path: C:\Users\cocop\PycharmProjects\Cubex - apparence\ressources
+*** Using downloaded git PortableGit-2.30.0-64-bit\PortableGit ***
+*** Please note that this is a beta feature, so if it does not work please also try a manual install of git from https://git-for-windows.github.io/ ***
+git version 2.30.0.windows.1
+java version "1.8.0_411"
+Java(TM) SE Runtime Environment (build 1.8.0_411-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.411-b09, mixed mode)
+Attempting to build version: '1.20.1' use --rev <version> to override
+Found version
+{
+	"name": "3871",
+	"description": "Jenkins build 3871",
+	"refs": {
+		"BuildData": "221903b51701960ac778d8641b31cebcf411caa8",
+		"Bukkit": "69c7ce23f295a5bf1b1b7128bc1daece4ead768e",
+		"CraftBukkit": "3f9263ba3a726846a9466e12da95d73229af4ad9",
+		"Spigot": "d2eba2c820b52b742eb542c6d2c4d76e3d743570"
+	},
+	"toolsVersion": 148,
+	"javaVersions": [61, 65]
+}
+
+*** The version you have requested to build requires Java versions between [Java 17, Java 21], but you are using Java 8
+*** Please rerun BuildTools using an appropriate Java version. For obvious reasons outdated MC versions do not support Java versions that did not exist at their release.
