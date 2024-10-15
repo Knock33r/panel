@@ -1,8 +1,8 @@
 /!\ -> Verifier si jdk 17 ou 21 installée pour le BuildTool.
         Sinon installer jdk.
-        localiser path pour add.
+        Localiser path pour transmettre a ligne cmd.
 
-Port a modifier en fonction de l'opérateur.
+Port TCP/UDP a modifier en fonction de l'opérateur.
 
 _______________
 cd [spi jar repo]
@@ -20,29 +20,5 @@ Hey! You're about to run the following command. Does it look correct?
 C:\Program Files (x86)\Java\jre1.8.0_421\bin\java.exe -Xms512M -jar C:\Users\cocop\Downloads\BuildTools (1).exe --nogui --rev 1.20.1
 
 If so, press the compile button already!
-----
-
-
-
-import subprocess
-import time
-lastOutput = None
-
-
-# Lancer le serveur Minecraft
-process = subprocess.Popen(['java', '-jar', 'spigot.jar'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-
-while True:
-    output = process.stdout.readline()  # Lire une ligne
-    if output != lastOutput :
-        list.append(output)
-        lastOutput = output
-
-    if output:
-        print(output.strip())  # Afficher la ligne
-        if "Done" in output:
-            print("Le serveur Minecraft est lancé !")
-            break
-    time.sleep(0.1)  # Attendre un court instant pour réduire la charge CPU
-
+---
 
